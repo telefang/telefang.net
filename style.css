@@ -1,0 +1,205 @@
+@font-face {
+	font-family: 'Electric Monster World';
+	src: url('Electric-Monster-World.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Denjuu World';
+	src: url('Denjuu-World.ttf') format('truetype');
+}
+
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 50px;
+	font-family: 'Denjuu World', Fallback, sans-serif;
+	font-size: 16px;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #58B010 url(Telefang1Map.png);
+	background-position: center;
+}
+
+h1, h2 {
+	font-weight: normal;
+	font-family: 'Electric Monster World';
+}
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 16px;
+	margin-top: 12px;
+}
+
+#container {
+	box-sizing: border-box;
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	text-align: center;
+	overflow: auto;
+	background: #ffff00;
+	border-radius: 24px;
+	border: 16px solid transparent;
+	border-image: url(border-big.png) 16 16 round;
+}
+
+#container p {
+	line-height: 24px;
+}
+
+section a {
+	padding: 5px;
+	display: inline-block;
+}
+
+.sublink {
+	border-radius: 8px;
+	margin-bottom: 4px;
+	border: 6px solid transparent;
+	border-image: url(smallborder.png) 6 6 round;
+	background: #FFFE67;
+}
+.sublink:hover {
+	background: #6872fe;
+	color: black;
+}
+
+
+.mainlinks ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0;
+	font-family: 'Electric Monster World';
+}
+
+.mainlinks ul li {
+	display: inline-block;
+	position: relative;
+	border: 8px solid transparent;
+	border-image: url(linkborder-0.png) 8 8 round;
+	background: #ffff00;
+	border-radius: 12px;
+	margin-bottom: 6px;
+}
+.mainlinks ul li:hover {
+	border-image: url(linkborder-1.png) 8 8 round;
+	padding: 6px;
+	margin: -6px;
+	background: #5a79d6;
+}
+
+.mainlinks img {
+	width: 96px;
+	height: 96px;
+}
+.mainlinks span {
+	display: block;
+	margin-top: 10px;
+}
+
+.news {
+	display: block;
+	font-size: 8px;
+	background: rgba(255,255,255,0.4);
+	border-image: url(smallborder.png) 4 4 round;
+	margin: 0 10px;
+}
+.news h2 {
+	display: inline;
+	font-size: 8px;
+	vertical-align: 1px;
+}
+
+.sublinks {
+	margin-top: 30px;
+}
+
+a:link { color: #1018b5; text-decoration: none; }
+a:visited { color: #1018b5; }
+a:active { color: #1018b5; }
+a:hover { color: #5a79d6; }
+.mainlinks a { color: black; padding: 10px; }
+
+#infobox {
+	position: fixed;
+	bottom: 10px;
+	padding: 4px;
+	max-width: 800px;
+	background: #ffff00;
+	border-radius: 24px;
+	border: 16px solid transparent;
+	border-image: url(border-big.png) 16 16 round;
+	text-align: left;
+}
+
+footer {
+	font-size: 8px;
+	line-height: 10px;
+	margin: 30px 0 24px 0;
+	padding: 0;
+}
+
+
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: none;
+	border: none;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,0.05);
+}::-webkit-scrollbar-thumb:hover {
+	background: rgba(0,0,0,0.5);
+}
+
+
+/* Mobile */
+@media screen and (orientation:portrait) {
+	body {
+		padding: 20px 0 10px 0;
+	}
+	#infobox {
+		display: none;
+	}
+	#container p {
+		line-height: 20px;
+	}
+	
+	h1 {
+		font-size: 24px;
+	}
+	
+	.news {
+		padding-bottom: 10px;
+	}
+	.news h2,
+	.news a {
+		display: block;
+		padding: 10px;
+		margin: 0 20px;
+	}
+	.news a:nth-child(odd) {
+		background: rgba(255,255,255,0.4);
+	}
+	.news a:nth-child(even) {
+		background: rgba(255,255,255,0.2);
+	}
+	
+	.sublink {
+		display: block;
+	}
+}
+
+@media screen and (max-height: 480px) and (orientation:landscape) {
+	body {
+		padding: 0 10px 0 10px;
+	}
+	#infobox {
+		display: none;
+	}
+}

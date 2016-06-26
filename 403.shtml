@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+	<title>Wikifang - 403 Permission Denied</title>
+	<style>
+	body {background-color:black;color:white;text-align:center;}
+	h1 {color:yellow;text-shadow: blue 0px 0px 5px, blue -1px 0px 0px, blue 0px -1px 0px, blue 1px 0px 0px, blue 0px 1px 0px; font-weight:normal;font-family:Impact; letter-spacing:3px;font-size:40pt; font-variant: small-caps;}
+	a {color:yellow;}
+	</style>
+</head>
+<body>
+	<h1>GAME OVER</h1>
+	<img src="/etc/sad_crypto.png">
+	<p>I don't think you can go in <span title="<!--#echo var="REQUEST_URI" -->">here</span> :(</p>
+	<!--<p>You could try the <a href="http://wikifang.meowcorp.us/wiki/index.php?title=Special%3ASearch&search=&fulltext=Search">search page</a>.</p>-->
+</body>
+</html>
