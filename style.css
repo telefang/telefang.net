@@ -17,7 +17,7 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: #58B010 url(Telefang1Map.png);
+	background: #58B010 url("img/bg-map.png");
 	background-position: center;
 }
 
@@ -43,7 +43,7 @@ h2 {
 	background: #ffff00;
 	border-radius: 24px;
 	border: 16px solid transparent;
-	border-image: url(border-big.png) 16 16 round;
+	border-image: url("img/border-big.png") 16 16 round;
 }
 
 #container p {
@@ -59,7 +59,7 @@ section a {
 	border-radius: 8px;
 	margin-bottom: 4px;
 	border: 6px solid transparent;
-	border-image: url(smallborder.png) 6 6 round;
+	border-image: url("img/border-small.png") 6 6 round;
 	background: #FFFE67;
 }
 .sublink:hover {
@@ -79,13 +79,13 @@ section a {
 	display: inline-block;
 	position: relative;
 	border: 8px solid transparent;
-	border-image: url(linkborder-0.png) 8 8 round;
+	border-image: url("img/border-link-0.png") 8 8 round;
 	background: #ffff00;
 	border-radius: 12px;
 	margin-bottom: 6px;
 }
 .mainlinks ul li:hover {
-	border-image: url(linkborder-1.png) 8 8 round;
+	border-image: url("img/border-link-1.png") 8 8 round;
 	padding: 6px;
 	margin: -6px;
 	background: #5a79d6;
@@ -104,7 +104,7 @@ section a {
 	display: block;
 	font-size: 8px;
 	background: rgba(255,255,255,0.4);
-	border-image: url(smallborder.png) 4 4 round;
+	border-image: url("img/border-small.png") 4 4 round;
 	margin: 0 10px;
 }
 .news h2 {
@@ -131,7 +131,7 @@ a:hover { color: #5a79d6; }
 	background: #ffff00;
 	border-radius: 24px;
 	border: 16px solid transparent;
-	border-image: url(border-big.png) 16 16 round;
+	border-image: url("img/border-big.png") 16 16 round;
 	text-align: left;
 }
 
